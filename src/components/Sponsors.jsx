@@ -46,7 +46,7 @@ const Sponsors = () => {
                     <div className="text-center text-neutral-content space-y-5 p-20">
                         <p className="font-light text-lg text-center bg-white bg-opacity-40 inline-block text-green-950 rounded-md px-1">CORP EVE.</p>
                         <h3 className="font-semibold text-5xl">Client <span className="font-bold">Says,</span></h3>
-                        <p className="text-lg font-light">"Bring People Together, or turn your passion into a business. Corp Eve gives you everything you need to host your best event yet"</p>
+                        <p className="text-xl font-light">"Bring People Together, or turn your passion into a business. Corp Eve gives you everything you need to host your best event yet"</p>
                         <p className="font-bold text-lg text-center bg-white bg-opacity-40 inline-block text-green-950 rounded-md px-1">Simon Riley</p>
                         <p>Taskforce, 141</p>
                     </div>

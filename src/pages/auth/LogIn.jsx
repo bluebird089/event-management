@@ -2,6 +2,8 @@ import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../components/provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const LogIn = () => {
 
@@ -37,9 +39,29 @@ const LogIn = () => {
         signInUser(email, password)
             .then(() => {
                 setSuccess('Signed In Successfully');
+                toast.success('Signed In Successfully', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
             })
             .catch(error => {
                 setError(error.message);
+                toast.error(`${error.message}`, {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
             })
     }
 
@@ -47,9 +69,29 @@ const LogIn = () => {
         signInWithGoogle()
             .then(() => {
                 setSuccess('Signed In Successfully');
+                toast.success('Signed In Successfully', {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
             })
             .catch(error => {
                 setError(error.message);
+                toast.error(`${error.message}`, {
+                    position: "top-right",
+                    autoClose: 3000,
+                    hideProgressBar: true,
+                    closeOnClick: true,
+                    pauseOnHover: true,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                });
             })
     }
 
@@ -80,6 +122,18 @@ const LogIn = () => {
             </form>
             <p className="text-lg">Already Have an Account? Please <Link className="underline font-medium text-green-950" to="/register">Register</Link></p>
             <div className='h-1 w-40 mx-auto bg-green-950'></div>
+            <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="light"
+            />
         </div>
     );
 };

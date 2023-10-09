@@ -13,7 +13,7 @@ const Header = () => {
                         <button className='btn bg-white bg-opacity-30 border-green-950 text-green-950 font-bold border-2 hover:bg-green-950 hover:text-white hover:border-green-950 rounded-full duration-300'>Learn More</button>
                     </div>
                 </div>
-                <div className='h-1 w-1/2 bg-green-950 mx-auto absolute bottom-5'></div>
+                <div className='h-1 w-20 bg-green-950 mx-auto absolute bottom-5'></div>
             </div>
         </div>
     );

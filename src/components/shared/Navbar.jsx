@@ -1,13 +1,14 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
 
     const navLink = <>
         <li><NavLink to='/'>Home</NavLink></li>
+        <li><NavLink to='/aboutus'>About Us</NavLink></li>
     </>
 
     return (
-        <div className="navbar bg-transparent absolute">
+        <div className="navbar bg-transparent absolute z-10">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -17,7 +18,9 @@ const Navbar = () => {
                         {navLink}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <Link to='/' className="text-3xl font-semibold text-white">
+                    <span className="bg-green-950 px-2 mr-[2px] font-semibold rounded">CORP</span>EVE.
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -25,8 +28,8 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn mr-2 font-bold text-green-950">Register</a>
-                <a className="btn bg-green-950 text-white font-semibold border-none">Log In</a>
+                <Link to='/register' className="btn mr-3 font-bold text-green-950">Register</Link>
+                <Link to='/login' className="btn bg-green-950 text-white font-semibold border-none">Log In</Link>
             </div>
         </div>
     );

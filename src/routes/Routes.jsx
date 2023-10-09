@@ -5,6 +5,7 @@ import ErrorPage from "../error/ErrorPage";
 import Register from "../pages/auth/Register";
 import LogIn from "../pages/auth/LogIn";
 import AboutUsPage from "../pages/AboutUsPage";
+import Gallery from "../pages/Gallery";
 
 const router = createBrowserRouter([
     {
@@ -14,7 +15,8 @@ const router = createBrowserRouter([
         children: [
             {
                 path: "/",
-                element: <Home></Home>
+                element: <Home></Home>,
+                loader: () => fetch("/data.json"),
             },
             {
                 path: 'aboutus',
@@ -27,6 +29,10 @@ const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <LogIn></LogIn>
+            },
+            {
+                path: '/gallery',
+                element: <Gallery></Gallery>
             }
         ]
     },

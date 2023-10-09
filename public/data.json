@@ -1,0 +1,50 @@
+[
+    {
+        "id": "1",
+        "title": "Conferences and Seminars",
+        "image": "https://i.ibb.co/QKTnt2L/Conferences.jpg",
+        "price": "1000",
+        "short_description": "Expertly plan and execute conferences and seminars, ensuring seamless events that leave a lasting impression.",
+        "description": "Elevate your events with our comprehensive conference and seminar management services. From concept to execution, we meticulously plan every detail to ensure a seamless experience. Our team handles logistics, coordinates engaging content, and manages event flow, leaving you free to focus on your audience. Whether it's a large-scale industry conference or an intimate seminar, we bring your vision to life, delivering memorable moments and impactful connections."
+    },
+    {
+        "id": "2",
+        "title": "Trade Shows",
+        "image": "https://i.ibb.co/SQkj4Gs/Trade.jpg",
+        "price": "1200",
+        "short_description": "Elevate your brand with captivating trade shows that attract the right audience and generate buzz.",
+        "description": "Maximize your trade show presence with our strategic approach. We design captivating booths, handle logistics, and create memorable experiences that enhance your brand's visibility and ROI. Our team understands the art of trade show success, from pre-show planning to post-show follow-up. We'll help you stand out in a crowded marketplace, attracting the right audience and ensuring your brand leaves a lasting impression."
+    },
+    {
+        "id": "3",
+        "title": "Team Building Workshops",
+        "image": "https://i.ibb.co/Gxn10wn/Team-Building-Workshops.jpg",
+        "price": "600",
+        "short_description": "Foster team cohesion with dynamic team-building workshops that ignite collaboration and innovation.",
+        "description": "Cultivate a cohesive and high-performing team with our dynamic workshops. Tailored to your organization's unique needs, our programs foster collaboration, leadership, and innovation. Through interactive activities and insightful coaching, we strengthen bonds among team members, ultimately enhancing productivity and boosting morale."
+    },
+    {
+        "id": "4",
+        "title": "Product Launches",
+        "image": "https://i.ibb.co/NTbbg6L/Product-Launches.jpg",
+        "price": "1500",
+        "short_description": "Unveil your products with flair through meticulously orchestrated product launches that captivate your audience.",
+        "description": "Launch your products with flair and impact. Our meticulous planning and execution ensure that your product gets the attention it deserves. From creative unveiling strategies to flawless event management, we generate excitement, drive sales, and leave a memorable mark on your target audience."
+    },
+    {
+        "id": "5",
+        "title": "Corporate Meetings",
+        "image": "https://i.ibb.co/x7MyTd0/Corporate-Meetings.jpg",
+        "price": "800",
+        "short_description": "Streamline corporate meetings for productivity and engagement, from logistics to flawless execution.",
+        "description": "Streamline your corporate meetings for maximum efficiency and engagement. Our end-to-end services encompass everything from agenda creation to logistical coordination. We create an environment that fosters productive discussions, ensuring your meetings are not only well-organized but also aligned with your organization's goals."
+    },
+    {
+        "id": "6",
+        "title": "Award Ceremonies",
+        "image": "https://i.ibb.co/3RLjG0X/Award-Ceremonies.jpg",
+        "price": "1300",
+        "short_description": "Celebrate excellence with memorable awards ceremonies that honor your achievers in style and prestige.",
+        "description": "Celebrate excellence in style and prestige. Our awards ceremonies are crafted to honor your achievers and inspire future accomplishments. From elegant venues to seamless event production, we create a memorable experience that reinforces your organization's success and recognizes the hard work and dedication of your team members."
+    }
+]

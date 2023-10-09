@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../components/provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import { ToastContainer, toast } from 'react-toastify';
@@ -7,6 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const LogIn = () => {
 
+    const navigate = useNavigate();
     const { signInUser, signInWithGoogle } = useContext(AuthContext);
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
@@ -49,6 +50,7 @@ const LogIn = () => {
                     progress: undefined,
                     theme: "light",
                 });
+                navigate('/')
             })
             .catch(error => {
                 setError(error.message);
@@ -79,6 +81,7 @@ const LogIn = () => {
                     progress: undefined,
                     theme: "light",
                 });
+                navigate('/')
             })
             .catch(error => {
                 setError(error.message);

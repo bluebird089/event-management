@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../components/provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import { updateProfile } from "firebase/auth";
@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Register = () => {
 
+    const navigate = useNavigate();
     const { createUser, signInWithGoogle } = useContext(AuthContext);
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
@@ -62,6 +63,7 @@ const Register = () => {
                     progress: undefined,
                     theme: "light",
                 });
+                navigate('/')
             })
             .catch(error => {
                 setError(error.message);
@@ -80,7 +82,7 @@ const Register = () => {
 
     const handleGoogleSignIn = () => {
         signInWithGoogle()
-            .then(result => {
+            .then(() => {
                 setSuccess('Added User Successfully')
                 toast.success('Added User Successfully', {
                     position: "top-right",
@@ -92,6 +94,7 @@ const Register = () => {
                     progress: undefined,
                     theme: "light",
                 });
+                navigate('/')
             })
             .catch(error => {
                 console.error(error);

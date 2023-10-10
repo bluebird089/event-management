@@ -8,10 +8,10 @@ const Header = () => {
                 <div className="hero-overlay bg-black bg-opacity-30"></div>
                 <div className="hero-content text-center text-neutral-content">
                     <div>
-                        <h2 className='font-light lg:text-4xl'>One Step</h2>
-                        <h1 className="mb-5 lg:text-6xl font-semibold">Corporate Event Planer</h1>
+                        <h2 className='font-light sm:text-2xl md:text-4xl'>One Step</h2>
+                        <h1 className="mb-5 text-2xl lg:text-6xl font-semibold">Corporate Event Planer</h1>
                         <p className="mb-5 lg:text-xl">Your Event | Our Duty</p>
-                        <Link to='/aboutus' className='btn bg-white bg-opacity-20 border-green-950 text-green-950 font-bold border-2 hover:bg-green-950 hover:text-white hover:border-green-950 rounded-full duration-300'>Learn More</Link>
+                        <Link to='/aboutus' className='btn btn-sm bg-white bg-opacity-20 border-green-950 text-green-950 font-bold border-2 hover:bg-green-950 hover:text-white hover:border-green-950 rounded-full duration-300'>Learn More</Link>
                     </div>
                 </div>
                 <div className='h-1 w-20 bg-green-950 mx-auto absolute bottom-5'></div>

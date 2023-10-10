@@ -50,11 +50,6 @@ const Navbar = () => {
                 About Us
             </NavLink>
         </li>
-        <li>
-            <NavLink className='text-white font-semibold hover:bg-black hover:bg-opacity-25 duration-300 py-1 px-2 rounded-full text-base' to='/gallery'>
-                Gallery
-            </NavLink>
-        </li>
     </>
 
     return (

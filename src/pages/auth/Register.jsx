@@ -113,10 +113,10 @@ const Register = () => {
 
     return (
 
-        <div className="py-20 container mx-auto space-y-10 flex flex-col items-center">
+        <div className="py-10 container mx-auto space-y-10 flex flex-col items-center">
             <h3 className="text-center font-bold text-5xl">Register!</h3>
             <div className='h-1 w-20 mx-auto bg-green-950'></div>
-            <form onSubmit={handleRegister} className="w-1/2 border border-gray-400 m-7 p-7 rounded-xl">
+            <form onSubmit={handleRegister} className="md:w-1/2 border border-gray-400 m-7 p-7 rounded-xl">
                 <label htmlFor="name">Name</label>
                 <input className="w-full mt-1 mb-5 border border-gray-400 py-2 px-3 rounded-lg outline-none" type="text" name="name" placeholder="Your Name" required />
 

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../components/provider/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,6 +8,7 @@ import 'react-toastify/dist/ReactToastify.css';
 const LogIn = () => {
 
     const navigate = useNavigate();
+    const location = useLocation();
     const { signInUser, signInWithGoogle } = useContext(AuthContext);
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
@@ -50,7 +51,7 @@ const LogIn = () => {
                     progress: undefined,
                     theme: "light",
                 });
-                navigate('/')
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
                 setError(error.message);
@@ -81,7 +82,7 @@ const LogIn = () => {
                     progress: undefined,
                     theme: "light",
                 });
-                navigate('/')
+                navigate(location?.state ? location.state : '/');
             })
             .catch(error => {
                 setError(error.message);
@@ -100,10 +101,10 @@ const LogIn = () => {
 
     return (
 
-        <div className="py-20 container mx-auto space-y-10 flex flex-col items-center">
+        <div className="py-10 container mx-auto space-y-10 flex flex-col items-center">
             <h3 className="text-center font-bold text-5xl">Log In!</h3>
             <div className='h-1 w-20 mx-auto bg-green-950'></div>
-            <form onSubmit={handleLogIn} className="w-1/2 border border-gray-400 m-7 p-7 rounded-xl">
+            <form onSubmit={handleLogIn} className="md:w-1/2 border border-gray-400 m-7 p-7 rounded-xl">
 
                 <label htmlFor="email">Email</label>
                 <input className="w-full mt-1 mb-5 border border-gray-400 py-2 px-3 rounded-lg outline-none" type="email" name="email" placeholder="Your Email" required />

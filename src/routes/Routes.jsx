@@ -7,6 +7,9 @@ import LogIn from "../pages/auth/LogIn";
 import AboutUsPage from "../pages/AboutUsPage";
 import Gallery from "../pages/Gallery";
 import Profile from "../pages/private/Profile";
+import PrivetRouteProfile from "../pages/private/PrivetRouteProfile";
+import PrivateRoute from "../pages/private/PrivateRoute";
+import Details from "../components/shared/Details";
 
 const router = createBrowserRouter([
     {
@@ -36,8 +39,13 @@ const router = createBrowserRouter([
                 element: <Gallery></Gallery>
             },
             {
-                path: 'profile',
-                element: <Profile></Profile>
+                path: '/profile',
+                element: <PrivetRouteProfile><Profile></Profile></PrivetRouteProfile>
+            },
+            {
+                path: '/details/:id',
+                element: <PrivateRoute><Details></Details></PrivateRoute>,
+                loader: () => fetch("/data.json"),
             }
         ]
     },

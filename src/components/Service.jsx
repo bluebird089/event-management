@@ -7,15 +7,15 @@ const Service = ({ service }) => {
 
     return (
 
-        <div className="card bg-base-100 shadow-xl">
+        <div className="bg-base-100 flex flex-col rounded-xl shadow-xl">
             <figure>
                 <img className="w-full rounded-t-[10px]" src={image} alt="" />
             </figure>
-            <div className="p-5 space-y-3">
-                <h2 className="card-title text-green-950 font-semibold  xl:text-3xl">{title}</h2>
-                <h4 className='font-bold'>Price: {price} $</h4>
-                <p className='font-light text-lg'>{short_description}</p>
-                <Link to={`details/${id}`} className="btn btn-sm sm:btn-md bg-green-950 hover:bg-[#071a07]  text-white font-semibold border-none w-full rounded-full">Show Details</Link>
+            <div className="p-2 md:p-5 flex-1 flex flex-col gap-3">
+                <h2 className="text-green-950 font-semibold text-lg sm:text-xl xl:text-3xl">{title}</h2>
+                <h4 className='font-bold text-sm md:text-base'>Price: {price} $</h4>
+                <p className='font-light flex-1 text-sm md:text-lg'>{short_description}</p>
+                <Link to={`details/${id}`} className="btn btn-sm sm:btn-md bg-green-950 hover:bg-[#071a07]  text-white font-semibold text-sm md:text-base border-none w-full rounded-full">Show Details</Link>
             </div>
         </div>
     )

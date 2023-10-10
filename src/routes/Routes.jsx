@@ -5,7 +5,6 @@ import ErrorPage from "../error/ErrorPage";
 import Register from "../pages/auth/Register";
 import LogIn from "../pages/auth/LogIn";
 import AboutUsPage from "../pages/AboutUsPage";
-import Gallery from "../pages/Gallery";
 import Profile from "../pages/private/Profile";
 import PrivetRouteProfile from "../pages/private/PrivetRouteProfile";
 import PrivateRoute from "../pages/private/PrivateRoute";
@@ -33,10 +32,6 @@ const router = createBrowserRouter([
             {
                 path: '/login',
                 element: <LogIn></LogIn>
-            },
-            {
-                path: '/gallery',
-                element: <Gallery></Gallery>
             },
             {
                 path: '/profile',

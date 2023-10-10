@@ -11,7 +11,7 @@ const Services = ({ data }) => {
                 <h5 className="font-light text-xs sm:text-base">CORPEVE. Events</h5>
                 <h2 className="font-semibold text-xl sm:text-2xl md:text-4xl"><span className="font-bold text-green-950">Event</span> Listing</h2>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-5">
                 {
                     data.map(service => <Service key={service.id} service={service}></Service>)
                 }

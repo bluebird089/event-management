@@ -40,9 +40,21 @@ const Navbar = () => {
     }
 
     const navLink = <>
-        <li><NavLink className={location?.pathname === "/" ? 'text-white font-semibold text-base' : 'text-black font-semibold text-base'} to='/'>Home</NavLink></li>
-        <li><NavLink className={location?.pathname === "/" ? 'text-white font-semibold text-base' : 'text-black font-semibold text-base'} to='/aboutus'>About Us</NavLink></li>
-        <li><NavLink className={location?.pathname === "/" ? 'text-white font-semibold text-base' : 'text-black font-semibold text-base'} to='/gallery'>Gallery</NavLink></li>
+        <li>
+            <NavLink className='text-white font-semibold hover:bg-black hover:bg-opacity-25 duration-300 py-1 px-2 rounded-full text-base' to='/'>
+                Home
+            </NavLink>
+        </li>
+        <li>
+            <NavLink className='text-white font-semibold hover:bg-black hover:bg-opacity-25 duration-300 py-1 px-2 rounded-full text-base' to='/aboutus'>
+                About Us
+            </NavLink>
+        </li>
+        <li>
+            <NavLink className='text-white font-semibold hover:bg-black hover:bg-opacity-25 duration-300 py-1 px-2 rounded-full text-base' to='/gallery'>
+                Gallery
+            </NavLink>
+        </li>
     </>
 
     return (
@@ -58,11 +70,11 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <Link to='/' className="text-3xl font-semibold text-white">
-                        <span className="bg-green-950 px-2 mr-[2px] font-semibold rounded">CORP</span><span className={location?.pathname !== '/' && "text-black"}>EVE.</span>
+                        <span className="bg-green-950 px-2 mr-[2px] font-semibold rounded-full">CORP</span><span className={location?.pathname !== '/' && "text-black"}>EVE.</span>
                     </Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className="menu menu-horizontal px-1">
+                    <ul className="flex gap-6 bg-green-950 p-3 rounded-full">
                         {navLink}
                     </ul>
                 </div>
@@ -77,20 +89,20 @@ const Navbar = () => {
                                 <img className="rounded-full w-12" src={user?.photoURL ? user.photoURL : `${defaultUser}`} />
                             </div>
                         </label>
-                        <ul tabIndex={0} className="dropdown-content z-[1] bg-black bg-opacity-30 w-40 p-2 rounded-xl mt-2 space-y-2">
+                        <ul tabIndex={0} className="dropdown-content z-[1] bg-black bg-opacity-30 w-40 p-2 rounded-[30px] mt-2 space-y-2">
                             <li>
-                                <Link to='/register' className="btn mr-3 font-bold text-green-950 w-full">Profile</Link>
+                                <Link to='/register' className="btn mr-3 rounded-full font-bold text-green-950 w-full">Profile</Link>
                             </li>
                             <div className="h-[1px] w-full bg-white"></div>
                             {
                                 user ? (
-                                    <button onClick={handleSignOut} to='/login' className="btn bg-green-950 text-white font-semibold border-none w-full">Log Out</button>
+                                    <button onClick={handleSignOut} to='/login' className="btn bg-green-950 text-white font-semibold border-none w-full rounded-full">Log Out</button>
                                 ) : (<>
                                     <li>
-                                        <Link to='/register' className="btn mr-3 font-bold text-green-950 w-full">Register</Link>
+                                        <Link to='/register' className="btn mr-3 font-bold text-green-950 w-full rounded-full">Register</Link>
                                     </li>
                                     <li>
-                                        <Link to='/login' className="btn bg-green-950 text-white font-semibold border-none w-full">Log In</Link>
+                                        <Link to='/login' className="btn bg-green-950 text-white font-semibold border-none w-full rounded-full">Log In</Link>
                                     </li>
                                 </>
                                 )
@@ -100,6 +112,7 @@ const Navbar = () => {
                 </div>
             </div>
             <ToastContainer
+                className='rounded-full'
                 position="top-right"
                 autoClose={3000}
                 hideProgressBar

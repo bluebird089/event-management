@@ -66,7 +66,7 @@ const Navbar = () => {
                         <label tabIndex={0} className="btn p-2 btn-sm sm:btn-md bg-black bg-opacity-30 text-white mr-1 border-none lg:hidden">
                             <HiMenu></HiMenu>
                         </label>
-                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-950 w-40 rounded-box">
+                        <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-green-950 w-28 md:w-40 rounded-box">
                             {navLink}
                         </ul>
                     </div>

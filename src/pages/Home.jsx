@@ -11,9 +11,9 @@ const Home = () => {
     return (
         <div>
             <Header></Header>
-            {/* <Services data={data}></Services>
+            {/* <Services data={data}></Services> */}
             <AboutUs></AboutUs>
-            <Sponsors></Sponsors> */}
+            <Sponsors></Sponsors>
         </div>
     );
 };

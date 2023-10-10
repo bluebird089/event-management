@@ -6,6 +6,7 @@ import Register from "../pages/auth/Register";
 import LogIn from "../pages/auth/LogIn";
 import AboutUsPage from "../pages/AboutUsPage";
 import Gallery from "../pages/Gallery";
+import Profile from "../pages/private/Profile";
 
 const router = createBrowserRouter([
     {
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path: '/gallery',
                 element: <Gallery></Gallery>
+            },
+            {
+                path: 'profile',
+                element: <Profile></Profile>
             }
         ]
     },

@@ -113,21 +113,21 @@ const Register = () => {
 
     return (
 
-        <div className="py-10 container mx-auto space-y-10 flex flex-col items-center">
-            <h3 className="text-center font-bold text-5xl">Register!</h3>
+        <div className="py-3 px-3 md:px-0 container mx-auto space-y-3 md:space-y-5 flex flex-col items-center">
+            <h3 className="text-center font-bold text-2xl md:text-5xl">Register!</h3>
             <div className='h-1 w-20 mx-auto bg-green-950'></div>
-            <form onSubmit={handleRegister} className="md:w-1/2 border border-gray-400 m-7 p-7 rounded-xl">
-                <label htmlFor="name">Name</label>
-                <input className="w-full mt-1 mb-5 border border-gray-400 py-2 px-3 rounded-lg outline-none" type="text" name="name" placeholder="Your Name" required />
+            <form onSubmit={handleRegister} className="md:w-2/3 lg:w-1/2 border border-gray-400 md:m-7  p-3 md:p-7 rounded-[32px]">
+                
+                <input className="w-full mt-1 mb-2 md:mb-5 border border-gray-400 py-2 px-3 rounded-full outline-none" type="text" name="name" placeholder="Your Name" required />
 
-                <label htmlFor="photo">Photo URL</label>
-                <input className="w-full mt-1 mb-5 border border-gray-400 py-2 px-3 rounded-lg outline-none" type="text" name="photo" placeholder="Photo URL" required />
+                
+                <input className="w-full mt-1 mb-2 md:mb-5 border border-gray-400 py-2 px-3 rounded-full outline-none" type="text" name="photo" placeholder="Photo URL" required />
 
-                <label htmlFor="email">Email</label>
-                <input className="w-full mt-1 mb-5 border border-gray-400 py-2 px-3 rounded-lg outline-none" type="email" name="email" placeholder="Your Email" required />
+                
+                <input className="w-full mt-1 mb-2 md:mb-5 border border-gray-400 py-2 px-3 rounded-full outline-none" type="email" name="email" placeholder="Your Email" required />
 
-                <label htmlFor="password">Password</label>
-                <input className="w-full mt-1 border border-gray-400 py-2 px-3 rounded-lg outline-none" type="password" name="password" placeholder="Type a Password" required />
+                
+                <input className="w-full mt-1 border border-gray-400 py-2 px-3 rounded-full outline-none" type="password" name="password" placeholder="Type a Password" required />
 
                 {error ? (
                     <div className="font-semibold text-red-600 mt-5">{error}</div>
@@ -140,14 +140,13 @@ const Register = () => {
                     <label htmlFor="terms">Accept Our Terms and Conditions</label>
                 </div>
 
+                <button className="btn rounded-full w-full mt-5 bg-green-950 text-white font-semibold border-none">Register</button>
 
-                <button className="btn w-full mt-5 bg-green-950 text-white font-semibold border-none">Register</button>
+                <p className="text-center font-semibold text-lg my-1 md:my-3">Or,</p>
 
-                <p className="text-center font-semibold text-lg my-3">Or,</p>
-
-                <span onClick={handleGoogleSignIn} className="btn w-full"><FcGoogle></FcGoogle>Continue With Google</span>
+                <span onClick={handleGoogleSignIn} className="btn w-full rounded-full"><FcGoogle></FcGoogle>Continue With Google</span>
             </form>
-            <p className="text-lg">Already Have an Account? Please <Link className="underline font-medium text-green-950" to="/login">Log In</Link></p>
+            <p className="text-sm sm:text-base md:text-lg">Already Have an Account? Please <Link className="underline font-medium text-green-950" to="/login">Log In</Link></p>
             <div className='h-1 w-40 mx-auto bg-green-950'></div>
             <ToastContainer
                 position="top-right"

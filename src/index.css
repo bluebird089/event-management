@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-.active{
+.active {
     @apply bg-black bg-opacity-25
+}
+
+:root {
+    --toastify-color-success: rgb(5 46 22 / var(--tw-bg-opacity));
 }

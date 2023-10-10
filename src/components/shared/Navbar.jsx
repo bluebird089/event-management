@@ -2,9 +2,8 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import defaultUser from "../../assets/Default_User.jpg"
 import { useContext } from "react";
 import { AuthContext } from "../provider/AuthProvider";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { HiMenu } from "react-icons/hi";
+import toast, { Toaster } from 'react-hot-toast';
 
 const Navbar = () => {
 
@@ -14,29 +13,18 @@ const Navbar = () => {
     const handleSignOut = () => {
         logOut()
             .then(() => {
-                toast.success('Log Out Successful', {
-                    position: "top-right",
-                    autoClose: 3000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "light",
-                });
+                toast('Logged Out',
+                    {
+                        style: {
+                            borderRadius: '30px',
+                            background: 'red',
+                            color: '#fff',
+                        },
+                    }
+                );
             })
-            .catch(error => {
-                toast.error(`${error.message}`, {
-                    position: "top-right",
-                    autoClose: 3000,
-                    hideProgressBar: true,
-                    closeOnClick: true,
-                    pauseOnHover: true,
-                    draggable: true,
-                    progress: undefined,
-                    theme: "light",
-                });
-            });
+            .catch(() => { });
+
     }
 
     const navLink = <>
@@ -54,6 +42,12 @@ const Navbar = () => {
 
     return (
         <div className="flex justify-center px-3 md:px-0">
+            <div>
+                <Toaster
+                    position="top-center"
+                    reverseOrder={false}
+                />
+            </div>
             <div className={location?.pathname === "/" ? "bg-transparent absolute navbar z-10 container mx-auto" : "navbar z-10 container mx-auto"}>
                 <div className="navbar-start">
 
@@ -84,7 +78,7 @@ const Navbar = () => {
                                 {
                                     user?.email ? <h3 className="text-white ml-2 text-xs sm:text-base md:ml-3 font-semibold">{user.email}</h3> : <></>
                                 }
-                                <img className="rounded-full w-8  sm:w-12" src={user?.photoURL ? user.photoURL : `${defaultUser}`} />
+                                <img className="rounded-full w-8  sm:w-12" src={user?.photoURL ? user.photoURL : `${defaultUser}`} alt="user" />
                             </div>
                         </label>
                         <ul tabIndex={0} className="dropdown-content z-[1] bg-black bg-opacity-30 w-28 sm:w-40 p-2 rounded-3xl sm:rounded-[30px] mt-2 space-y-2">
@@ -109,19 +103,6 @@ const Navbar = () => {
                     </div>
                 </div>
             </div>
-            <ToastContainer
-                className='rounded-full'
-                position="top-right"
-                autoClose={3000}
-                hideProgressBar
-                newestOnTop={false}
-                closeOnClick
-                rtl={false}
-                pauseOnFocusLoss
-                draggable
-                pauseOnHover
-                theme="light"
-            />
         </div>
     );
 };

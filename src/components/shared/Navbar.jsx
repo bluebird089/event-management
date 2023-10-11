@@ -38,6 +38,11 @@ const Navbar = () => {
                 About Us
             </NavLink>
         </li>
+        <li>
+            <NavLink className='text-white font-semibold hover:bg-black hover:bg-opacity-25 duration-300 py-1 px-2 rounded-full text-base' to='/gallery'>
+                Gallery
+            </NavLink>
+        </li>
     </>
 
     return (
@@ -88,7 +93,7 @@ const Navbar = () => {
                             <div className="h-[1px] w-full bg-white"></div>
                             {
                                 user ? (
-                                    <button onClick={handleSignOut} to='/login' className="btn btn-sm sm:btn-md bg-green-950 text-white font-semibold border-none w-full rounded-full">Log Out</button>
+                                    <button onClick={handleSignOut} to='/login' className="btn btn-sm sm:btn-md bg-green-950 hover:bg-[#071a07] text-white font-semibold border-none w-full rounded-full">Log Out</button>
                                 ) : (<>
                                     <li>
                                         <Link to='/register' className="btn btn-sm sm:btn-md mr-3 font-bold text-green-950 w-full rounded-full">Register</Link>

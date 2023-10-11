@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container px-3 sm:p-0 mx-auto flex items-center">
                 <div className="space-y-1 w-1/2">
                     <Link to='/' className="text-xl md:text-3xl font-semibold text-white">
-                        <span className="bg-white px-2 mr-[2px] rounded font-bold text-green-950">CORP</span>EVE.
+                        <span className="bg-white px-2 mr-[2px] rounded-full font-bold text-green-950">CORP</span>EVE.
                     </Link>
                     <p className="text-xs">Corp Eve Event Management Ltd.</p>
                 </div>

@@ -3,7 +3,7 @@ import aboutUsImage from '../assets/About-Us.jpg'
 const AboutUsPage = () => {
     return (
         <div className="py-3 px-3 md:px-0 container mx-auto space-y-3 md:space-y-10">
-            <h3 className="text-center font-bold text-2xl md:text-5xl">About Us</h3>
+            <h3 className="text-center font-bold text-2xl md:text-5xl">Gallery</h3>
             <div className='h-1 w-20 mx-auto bg-green-950'></div>
             <div className='flex flex-col-reverse gap-3 lg:flex-row items-center'>
                 <div className="lg:w-1/2 md:text-xl text-center lg:text-left font-light space-y-2 md:space-y-5">

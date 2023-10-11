@@ -103,7 +103,7 @@ const Register = () => {
                 <input className="w-full mt-1 mb-2 md:mb-5 border border-gray-400 py-2 px-3 rounded-full outline-none" type="text" name="name" placeholder="Your Name" required />
 
 
-                <input className="w-full mt-1 mb-2 md:mb-5 border border-gray-400 py-2 px-3 rounded-full outline-none" type="text" name="photo" placeholder="Photo URL" required />
+                <input className="w-full mt-1 mb-2 md:mb-5 border border-gray-400 py-2 px-3 rounded-full outline-none" type="text" name="photo" placeholder="Photo URL" />
 
 
                 <input className="w-full mt-1 mb-2 md:mb-5 border border-gray-400 py-2 px-3 rounded-full outline-none" type="email" name="email" placeholder="Your Email" required />

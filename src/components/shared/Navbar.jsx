@@ -24,7 +24,6 @@ const Navbar = () => {
                 );
             })
             .catch(() => { });
-
     }
 
     const navLink = <>

@@ -98,7 +98,7 @@ const LogIn = () => {
                     <div className="font-semibold text-green-600 mt-5">{success}</div>
                 )}
 
-                <button className="btn rounded-full w-full md:mt-1 bg-green-950 hover:bg-[#071a07] text-white font-semibold border-none">Register</button>
+                <button className="btn rounded-full w-full md:mt-1 bg-green-950 hover:bg-[#071a07] text-white font-semibold border-none">Log In</button>
 
                 <p className="text-center font-semibold text-lg my-1 md:my-3">Or,</p>
 

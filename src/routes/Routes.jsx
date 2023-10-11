@@ -10,6 +10,7 @@ import PrivetRouteProfile from "../pages/private/PrivetRouteProfile";
 import PrivateRoute from "../pages/private/PrivateRoute";
 import Details from "../components/shared/Details";
 import Gallery from "../pages/Gallery";
+import ContactUs from "../pages/ContactUs";
 
 const router = createBrowserRouter([
     {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
             {
                 path: '/gallery',
                 element: <Gallery></Gallery>
+            },
+            {
+                path: '/contact',
+                element: <PrivateRoute><ContactUs></ContactUs></PrivateRoute>
             },
             {
                 path: '/register',

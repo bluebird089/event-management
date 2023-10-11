@@ -42,6 +42,11 @@ const Navbar = () => {
                 Gallery
             </NavLink>
         </li>
+        <li>
+            <NavLink className='text-white font-semibold hover:bg-black hover:bg-opacity-25 duration-300 py-1 px-2 rounded-full text-base' to='/contact'>
+                Contact Us
+            </NavLink>
+        </li>
     </>
 
     return (
@@ -80,7 +85,7 @@ const Navbar = () => {
                         <label tabIndex={0}>
                             <div className="bg-green-950 flex items-center gap-1 md:gap-2 rounded-full duration-500">
                                 {
-                                    user?.email ? <h3 className="text-white ml-2 text-xs sm:text-base md:ml-3 font-semibold">{user.email}</h3> : <></>
+                                    user?.displayName ? <h3 className="text-white ml-2 text-xs sm:text-base md:ml-3 font-semibold">{user.displayName}</h3> : <></>
                                 }
                                 <img className="rounded-full w-8  sm:w-12" src={user?.photoURL ? user.photoURL : `${defaultUser}`} alt="user" />
                             </div>

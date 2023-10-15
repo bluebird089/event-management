@@ -41,7 +41,8 @@ const Sponsors = () => {
                         <h3>DUSTIN CORP</h3>
                     </div>
                 </div>
-                <div className="hero md:w-1/2 rounded-lg" style={{ backgroundImage: `url(${Client})` }} data-aos="fade-left" data-aos-duration="1000">
+
+                <div className="hero md:w-1/2 rounded-lg" style={{ backgroundImage: `url(${Client})` }} data-aos="fade-up" data-aos-duration="1000">
                     <div className="hero-overlay rounded-lg bg-black bg-opacity-40"></div>
                     <div className="text-center text-neutral-content space-y-3 md:space-y-5 p-5 lg:p-20">
                         <p className="font-light md:text-lg text-center bg-white bg-opacity-40 inline-block text-green-950 rounded-md px-1">CORP EVE.</p>

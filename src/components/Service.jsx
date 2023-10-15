@@ -7,7 +7,8 @@ const Service = ({ service }) => {
 
     return (
 
-        <div className="bg-base-100 flex flex-col rounded-xl shadow-xl">
+        <div className="bg-base-100 flex flex-col rounded-xl shadow-xl" data-aos="fade-up"
+        data-aos-duration="1000">
             <figure>
                 <img className="w-full rounded-t-[10px]" src={image} alt="" />
             </figure>

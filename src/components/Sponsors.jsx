@@ -16,32 +16,32 @@ const Sponsors = () => {
             </div>
             <div className="flex flex-col md:flex-row gap-5 mt-10">
                 <div className="md:w-1/2 grid grid-cols-2 gap-3">
-                    <div className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
+                    <div data-aos="flip-right" data-aos-duration="1000" className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
                         <AiFillGoogleCircle></AiFillGoogleCircle>
                         <h3>GOOGLE</h3>
                     </div>
-                    <div className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
+                    <div data-aos="flip-right" data-aos-duration="2000" className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
                         <TbBrandToyota></TbBrandToyota>
                         <h3>TOYOTA</h3>
                     </div>
-                    <div className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
+                    <div data-aos="flip-right" data-aos-duration="1000" className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
                         <GiFlowerTwirl></GiFlowerTwirl>
                         <h3>WINX</h3>
                     </div>
-                    <div className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
+                    <div data-aos="flip-right" data-aos-duration="2000" className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
                         <LiaCloudversify></LiaCloudversify>
                         <h3>THUNDERCLOUD</h3>
                     </div>
-                    <div className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
+                    <div data-aos="flip-right" data-aos-duration="1000" className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
                         <SiGunicorn></SiGunicorn>
                         <h3>NEW DAY</h3>
                     </div>
-                    <div className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
+                    <div data-aos="flip-right" data-aos-duration="2000" className="bg-green-950 py-5 rounded-md flex text-white items-center gap-1 md:text-lg lg:text-2xl font-semibold justify-center">
                         <GiDustCloud></GiDustCloud>
                         <h3>DUSTIN CORP</h3>
                     </div>
                 </div>
-                <div className="hero md:w-1/2 rounded-lg" style={{ backgroundImage: `url(${Client})` }}>
+                <div className="hero md:w-1/2 rounded-lg" style={{ backgroundImage: `url(${Client})` }} data-aos="fade-left" data-aos-duration="1000">
                     <div className="hero-overlay rounded-lg bg-black bg-opacity-40"></div>
                     <div className="text-center text-neutral-content space-y-3 md:space-y-5 p-5 lg:p-20">
                         <p className="font-light md:text-lg text-center bg-white bg-opacity-40 inline-block text-green-950 rounded-md px-1">CORP EVE.</p>
